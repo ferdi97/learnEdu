@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="buah">anggur</li>
+        <li class="buah">pepaya</li>
+        <li class="buah">mangga</li>
+        <li class="buah">sirsak</li>
+    </ul>
+    <script>
+        let buah = document.querySelectorAll('.buah');
+        for(let e of buah){
+            e.addEventListener('click', function(){
+                this.style.color = 'red';
+                this.style.transition = '0.2s';
+                this.style.display = 'block';
+            })
+        }
+        //let nilai = 80 ;
+        //let gender ="pria";
+          //  if (nilai >70 ){
+            //    if(gender == "pria"){
+                  //  console.log("selamat anda lulus"); 
+              //  }else {
+                  //  console.log("anda wanita dan anda tidak lulus")
+                //}
+                //}
+
+
+            //let angka = 5;
+            //for (let i = 0 ; i<=angka ;  i++){
+            //    console.log(i);
+            //}
+
+            //let cetak = true;
+            //while(cetak){
+            //alert("hallo selamat belajar");
+            //cetak = confirm("apakah anda ingin menampilkan alert ");
+            //}
+
+            //let buah = ['mangga','jeruk','apel'];
+            //for (let b in buah){
+            //    console.log(buah[b]);
+            //}
+
+
+    </script>
+    <script>
+        let keluarga =[{
+            nama: 'joko',
+            status: 'bekerja',
+            pendapatan: 2000000
+        },
+        {
+            nama: 'Tini',
+            status: 'bekerja',
+            pendapatan: 5000000
+        },
+        {
+            nama: 'Yono',
+            status: 'SEKOLAH',
+            pendapatan: 500000
+        }];
+        let kk = keluarga.map(function(kk){
+            return kk;
+        })
+        console.log(kk);
+
+        let kk2 = keluarga.filter(function(kk){
+            return kk;
+        })
+
+        console.log(kk2);
+
+    </script>
+</body>
+</html>

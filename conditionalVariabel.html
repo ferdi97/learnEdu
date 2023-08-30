@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const color = "pink" ;
+        const keterangan = color === "red" ? 'anda pemberani' : 'anda pemalu' ;
+        console.log(keterangan);
+
+        const kondisiAnd = color == "pink" && "Masih Muda";
+        const kondisiOr = color == "pink" || "Hello";
+
+        console.log(kondisiAnd);
+        console.log(kondisiOr);
+    </script>
+    <script>
+        const listbuku = [
+            {
+                judul       : "si kancil",
+                harga       : 5000,
+                umurbuku    : 2
+            },
+            {
+                judul : "si buruk rupa",
+                harga : 6000,
+                umurbuku    : 4
+            },
+            {
+                judul : "kelinci dan kura2",
+                harga : 2000000,
+                umurbuku    : 10
+            }
+        ];
+
+        const listjudul = listbuku.map((value) => value.umurbuku);
+        console.log(listjudul);
+
+        const bukumahal= listbuku.filter((buku) => buku.harga > 1000000);
+        console.log(bukumahal)
+    </script>
+
+</body>
+</html>

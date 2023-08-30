@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Orang{
+            makan(){
+                console.log("sedang makan");
+            }
+        }
+
+        const edi = new Orang();
+        edi.umur = 13 ;
+        edi.tidur = function(){
+            console.log("sedang Tidur");
+        }
+        console.log(edi.tidur());
+    </script>
+
+    <script>
+        class Person{
+            constructor(){
+                console.log("object hasbeen created")
+            }
+            makan(){
+                console.log("sedang makan");
+            }
+            static jalan(){
+                console.log("Sedang Jalan");
+            }
+        }
+
+        const ida = new Person();
+        ida.umur = 13 ;
+        ida.tidur = function(){
+            console.log("sedang Tidur");
+        }
+        console.log(ida.tidur());
+        Person.jalan();
+    </script>
+</body>
+</html>

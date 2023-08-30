@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const listhewan = ["jerapah", "gajah","buaya darat","katak laut","cicak goyang","lintah"];
+
+        const hwn1 = listhewan[0];
+        const hwn2 = listhewan[1];
+
+        console.log(hwn1,hwn1);
+
+        const [h1,h2,h3,...lainnya] = listhewan;
+        console.log(h1,h2,lainnya);
+
+    </script>
+
+    <script>
+        const dosen = {
+            nama : "lia",
+            jk : "P",
+            mk : "Robotic",
+            sifat : "baik",
+            jabatan : {
+                jbt1 : "WD1",
+                jbt2 : "Ketua Senat"
+            },
+            hoby: "renang",
+            paras : "cantik"
+        };
+
+        const {nama,jk,mk,sifat,jabatan, jabatan:{jbt1},...dsbg} = dosen ;
+        console.log(nama,jk,mk,sifat,jabatan,jbt1,dsbg);
+    </script>
+
+    <script>
+        const buku = {
+            judul : "belajar",
+            harga : "2000",
+            halaman : "500",
+            bab : "50",
+            pengarang : {
+                nama : "Hafidzah",
+                negara : "Indonesia"
+            },
+            cover: "Hard Cover",
+            kertas : "HVS 80mm"
+        };
+
+        function printInfoBuku(judul,harga, namaPengarang){
+            console.log(judul,harga,namaPengarang);
+        }
+
+        printInfoBuku(buku.judul,buku.harga,buku.pengarang.nama);
+                                                //alias         //default item
+        function printInfoBuku2({judul, harga, halaman:hlm, penerbit="Gramed"}){
+            console.log(judul, harga, hlm, penerbit);
+        }
+        printInfoBuku2(buku);
+    </script>
+</body>
+</html>
